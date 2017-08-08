@@ -31,7 +31,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dBT-AY-9Ok">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.59768080711364746" green="0.72432172298431396" blue="0.78827488422393799" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.56470588235294117" green="0.72941176470588232" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wfg-ud-x6q"/>
@@ -82,7 +82,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.59607843137254901" green="0.72549019607843135" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.56470588235294117" green="0.72941176470588232" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3Ql-ud-mlH" firstAttribute="top" secondItem="9se-39-bi1" secondAttribute="bottom" constant="13.6" id="1I1-5f-3Sg"/>
                             <constraint firstItem="kev-bC-o56" firstAttribute="top" secondItem="UWS-uy-fZc" secondAttribute="bottom" constant="25" id="479-Sg-Nlk"/>
@@ -436,13 +436,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2g-Jc-bPm">
-                                <rect key="frame" x="114" y="120" width="147" height="55"/>
+                                <rect key="frame" x="114" y="120" width="147" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JXj-D7-eO0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="35"/>
                                 <color key="textColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="278-1d-g8N">
-                                <rect key="frame" x="87" y="209" width="201" height="34"/>
+                                <rect key="frame" x="87" y="189" width="201" height="54"/>
                                 <string key="text">오늘부터 금민 여러분의
 금연을 책임질 금연의 민족입니다!</string>
                                 <fontDescription key="fontDescription" name="KoPubDotumPL" family="KoPubDotum_Pro" pointSize="15"/>
@@ -472,7 +475,6 @@
                             <constraint firstAttribute="trailing" secondItem="ZJw-hL-L2w" secondAttribute="trailing" constant="149" id="dor-qP-KBm"/>
                             <constraint firstItem="ZJw-hL-L2w" firstAttribute="top" secondItem="aGv-PW-NiQ" secondAttribute="bottom" constant="104" id="jPm-UK-H1Y"/>
                             <constraint firstItem="DqV-Ni-Y0D" firstAttribute="top" secondItem="aGv-PW-NiQ" secondAttribute="bottom" constant="158" id="qPq-UK-VXe"/>
-                            <constraint firstItem="DqV-Ni-Y0D" firstAttribute="top" secondItem="Q2g-Jc-bPm" secondAttribute="bottom" constant="492" id="szZ-UG-RcB"/>
                             <constraint firstItem="Q2g-Jc-bPm" firstAttribute="top" secondItem="T9h-UK-jHl" secondAttribute="bottom" constant="100" id="vyp-tg-hhm"/>
                         </constraints>
                     </view>
@@ -494,13 +496,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금연진행 퍼센트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzS-u7-WGX">
-                                <rect key="frame" x="78" y="120" width="220" height="55"/>
+                                <rect key="frame" x="78" y="120" width="220" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RMB-fD-kfh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="35"/>
                                 <color key="textColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYx-O1-LYb">
-                                <rect key="frame" x="101" y="209" width="175" height="34"/>
+                                <rect key="frame" x="101" y="189" width="175" height="54"/>
                                 <string key="text">금연의 진행 상황을 알기 쉽게
 체크할 수 있습니다! </string>
                                 <fontDescription key="fontDescription" name="KoPubDotumPL" family="KoPubDotum_Pro" pointSize="15"/>
@@ -518,7 +523,6 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="CuR-kS-U5F" secondAttribute="trailing" constant="136" id="C9L-vQ-vML"/>
                             <constraint firstItem="FzS-u7-WGX" firstAttribute="leading" secondItem="pgt-66-vY3" secondAttribute="leading" constant="78" id="L7f-Hb-1c2"/>
-                            <constraint firstItem="aa9-g9-zCH" firstAttribute="top" secondItem="FzS-u7-WGX" secondAttribute="bottom" constant="492" id="Pes-xV-Ybx"/>
                             <constraint firstAttribute="trailing" secondItem="1yJ-38-k4Q" secondAttribute="trailing" constant="149" id="QaR-hY-TQc"/>
                             <constraint firstAttribute="trailing" secondItem="FzS-u7-WGX" secondAttribute="trailing" constant="77" id="QxD-X4-ff0"/>
                             <constraint firstItem="aa9-g9-zCH" firstAttribute="top" secondItem="1yJ-38-k4Q" secondAttribute="bottom" constant="39" id="RMV-Lj-J7g"/>
@@ -552,13 +556,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금연 TIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SD3-5U-6CZ">
-                                <rect key="frame" x="125" y="120" width="126" height="55"/>
+                                <rect key="frame" x="125" y="120" width="126" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0yw-WY-5gb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="35"/>
                                 <color key="textColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyb-W1-ECo">
-                                <rect key="frame" x="100" y="209" width="175" height="34"/>
+                                <rect key="frame" x="100" y="189" width="175" height="54"/>
                                 <string key="text">금연에 대한 정보를
 카드뉴스처럼 볼 수 있습니다.</string>
                                 <fontDescription key="fontDescription" name="KoPubDotumPL" family="KoPubDotum_Pro" pointSize="15"/>
@@ -584,7 +591,6 @@
                             <constraint firstItem="SD3-5U-6CZ" firstAttribute="leading" secondItem="j8m-l4-603" secondAttribute="leading" constant="125" id="GUa-Hp-s4a"/>
                             <constraint firstItem="Cnp-y4-7rO" firstAttribute="top" secondItem="miB-u5-GM9" secondAttribute="bottom" constant="39" id="QYc-ZX-oLY"/>
                             <constraint firstAttribute="trailing" secondItem="nJM-IH-EwI" secondAttribute="trailing" constant="136" id="TwZ-Sb-Gcc"/>
-                            <constraint firstItem="Cnp-y4-7rO" firstAttribute="top" secondItem="SD3-5U-6CZ" secondAttribute="bottom" constant="492" id="Udi-Jh-iZ5"/>
                             <constraint firstItem="wyb-W1-ECo" firstAttribute="leading" secondItem="j8m-l4-603" secondAttribute="leading" constant="100" id="fRf-hg-Xn1"/>
                             <constraint firstAttribute="trailing" secondItem="SD3-5U-6CZ" secondAttribute="trailing" constant="124" id="gns-gZ-CF0"/>
                             <constraint firstItem="miB-u5-GM9" firstAttribute="top" secondItem="nJM-IH-EwI" secondAttribute="bottom" constant="104" id="igs-68-AhU"/>
@@ -610,13 +616,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금연 Diary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyC-5q-LPp">
-                                <rect key="frame" x="109" y="120" width="157" height="55"/>
+                                <rect key="frame" x="109" y="120" width="157" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="h2N-Ob-hVu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="35"/>
                                 <color key="textColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CZ-Mu-8uX">
-                                <rect key="frame" x="78" y="209" width="219" height="34"/>
+                                <rect key="frame" x="78" y="189" width="219" height="54"/>
                                 <string key="text">하루를 마무리 하면서
 오늘의 금연도를 기록할 수 있습니다.</string>
                                 <fontDescription key="fontDescription" name="KoPubDotumPL" family="KoPubDotum_Pro" pointSize="15"/>
@@ -642,7 +651,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97256577014923096" green="0.97252929210662842" blue="0.97255396842956543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qp3-f2-W3f" firstAttribute="top" secondItem="AyC-5q-LPp" secondAttribute="bottom" constant="492" id="02k-wz-ymY"/>
                             <constraint firstItem="g0W-bM-j9b" firstAttribute="top" secondItem="3CZ-Mu-8uX" secondAttribute="bottom" constant="58" id="4WJ-Ur-7X5"/>
                             <constraint firstItem="qp3-f2-W3f" firstAttribute="top" secondItem="IPv-SA-F3W" secondAttribute="bottom" constant="39" id="5yY-BV-p8f"/>
                             <constraint firstItem="3CZ-Mu-8uX" firstAttribute="leading" secondItem="Fmt-eG-AAX" secondAttribute="leading" constant="78" id="8Z2-nb-bWJ"/>

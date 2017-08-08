@@ -2,7 +2,7 @@
 //  RootPageViewController.swift
 //  seminar_4
 //
-//  Created by 하태경 on 2017. 4. 29..
+//  Created by 김재희 on 2017. 4. 29..
 //  Copyright © 2017년 addcampus. All rights reserved.
 //
 

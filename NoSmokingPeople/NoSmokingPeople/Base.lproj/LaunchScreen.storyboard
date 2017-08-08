@@ -39,7 +39,7 @@
                                 <rect key="frame" x="155" y="418" width="65" height="131"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.59768080711364746" green="0.72432172298431396" blue="0.78827488422393799" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.56470588235294117" green="0.72941176470588232" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1OP-eg-8jR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4F5-bB-zHu"/>
                             <constraint firstItem="1OP-eg-8jR" firstAttribute="top" secondItem="ZWt-Lr-AbA" secondAttribute="bottom" constant="54" id="4l5-R7-aGh"/>
