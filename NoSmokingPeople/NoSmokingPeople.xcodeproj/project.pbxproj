@@ -24,6 +24,7 @@
 		CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
+		CBDEA7EB1F39A47700D8F38F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDEA7EA1F39A47700D8F38F /* Extension.swift */; };
 		CBDFF8FA1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
 		CBDFF8FB1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
 		CBDFF8FC1F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */; };
@@ -78,6 +79,7 @@
 		CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrittenOathViewController.swift; sourceTree = "<group>"; };
 		CB194E941F21D77300D80114 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
+		CBDEA7EA1F39A47700D8F38F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
 		CBDFF8F91F2C6D81005AE38E /* KoPub Dotum_Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Medium.otf"; sourceTree = "<group>"; };
 		CBDFF9001F2C7AA6005AE38E /* KoPub Dotum_Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Light.otf"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
 				CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */,
 				CB1342691F1FB94200E1A1AA /* Main.storyboard */,
+				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
 				CBDFF9041F2C8CBF005AE38E /* ManualViewController.swift */,
 				CBF826C81F31D182002D4C09 /* HomeViewController.swift */,
 				CB0940E01F3456970078BAA6 /* Manual1_ViewController.swift */,
@@ -250,6 +253,7 @@
 				TargetAttributes = {
 					CB1342611F1FB94200E1A1AA = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2F465AG84W;
 						ProvisioningStyle = Automatic;
 					};
 					CB1342751F1FB94200E1A1AA = {
@@ -331,6 +335,7 @@
 				830B363C1F39818F0045AC90 /* RootPageViewController.swift in Sources */,
 				CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */,
 				CB1342681F1FB94200E1A1AA /* SmokingCheckViewController.swift in Sources */,
+				CBDEA7EB1F39A47700D8F38F /* Extension.swift in Sources */,
 				CBDFF9051F2C8CBF005AE38E /* ManualViewController.swift in Sources */,
 				CB0940E11F3456970078BAA6 /* Manual1_ViewController.swift in Sources */,
 				CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */,
@@ -494,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2F465AG84W;
 				INFOPLIST_FILE = NoSmokingPeople/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jaehui-INU-Appcenter.NoSmokingPeople";

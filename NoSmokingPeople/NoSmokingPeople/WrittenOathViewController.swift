@@ -16,6 +16,18 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var DateTextField: UITextField!
     
+    @IBAction func textFieldEditingDidChange(sender: UITextField) {
+        
+        print("textField: \(DateTextField.text!)")
+        
+        if ((DateTextField.text) != nil) {
+            DateTextField.backgroundColor = UIColor(hex: 0x98B9C9)
+        } else {
+            DateTextField.backgroundColor = UIColor.white
+        }
+    }
+    
+    
     @IBAction func DatetextFieldEditing(_ sender: UITextField) {
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.datePickerMode = UIDatePickerMode.date
@@ -27,6 +39,7 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = DateFormatter.Style.medium
         dateFormatter.timeStyle = DateFormatter.Style.none
+        dateFormatter.dateFormat = "yyyy년 MM월 dd일"
         DateTextField.text = dateFormatter.string(from: sender.date)
     }
     

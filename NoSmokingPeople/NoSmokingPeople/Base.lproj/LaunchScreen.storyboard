@@ -32,10 +32,10 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZWt-Lr-AbA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ZWt-Lr-AbA">
                                 <rect key="frame" x="84" y="159" width="207" height="205"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCharacter" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-eg-8jR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCharacter" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-eg-8jR">
                                 <rect key="frame" x="155" y="418" width="65" height="131"/>
                             </imageView>
                         </subviews>

@@ -17,14 +17,19 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SNTextField: UITextField!
     @IBOutlet weak var SPTextField: UITextField!
    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+         observeKeyBoardNotification()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        observeKeyBoardNotification()
+       
 
-        
         
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
