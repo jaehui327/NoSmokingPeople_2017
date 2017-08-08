@@ -22,6 +22,10 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        observeKeyBoardNotification()
+
+        
+        
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
@@ -55,3 +59,31 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
     
 }
 
+extension SmokingCheckViewController{
+   
+    fileprivate func observeKeyBoardNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    func keyboardHide(){
+        //        self.view.frame.height
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping:1, initialSpringVelocity: 1 ,options: .curveEaseOut, animations: {
+            
+            self.view.frame = CGRect(x:0, y:0, width:self.view.frame.width, height: self.view.frame.height)
+        }, completion: nil)
+        
+        print("키보드가 보여진다")
+    }
+    
+    func keyboardShow(){
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1 ,options: .curveEaseOut, animations: {
+            self.view.frame = CGRect(x:0, y:-100, width:self.view.frame.width, height:self.view.frame.height)
+        }, completion: nil)
+        
+        print("키보드가 사라진다")
+    }
+    
+}

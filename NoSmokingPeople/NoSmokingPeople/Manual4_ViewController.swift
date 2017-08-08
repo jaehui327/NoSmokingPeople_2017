@@ -10,6 +10,20 @@ import UIKit
 
 class Manual4_ViewController: UIViewController {
 
+    
+    
+    
+    @IBAction func gotoHomeViewController(_ sender: Any) {
+        
+        let nvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        self.navigationController?.pushViewController(nvc, animated: true)
+        
+        
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

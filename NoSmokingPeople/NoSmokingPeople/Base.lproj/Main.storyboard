@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2uj-5D-zO0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2uj-5D-zO0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -366,7 +366,7 @@
                         <barButtonItem key="rightBarButtonItem" image="btnComplete" id="bql-7J-AsN">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="eR7-Wi-uyJ" kind="show" id="bbq-5E-wTY"/>
+                                <segue destination="PMy-1s-XfM" kind="showDetail" id="MVg-ZE-rof"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -415,12 +415,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D57-Jv-ZTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="172"/>
+            <point key="canvasLocation" x="2570" y="-134"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="DdF-rN-nu1">
             <objects>
-                <viewController id="YPD-F4-mUC" customClass="HomeViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="YPD-F4-mUC" customClass="HomeViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FbF-PT-k84"/>
                         <viewControllerLayoutGuide type="bottom" id="7em-US-wgW"/>
@@ -439,12 +439,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOj-bA-9ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4334" y="172"/>
+            <point key="canvasLocation" x="5308" y="888.30584707646187"/>
+        </scene>
+        <!--Root Page View Controller-->
+        <scene sceneID="57G-Pt-6t7">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="GqR-K3-Z1y" customClass="RootPageViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q2Y-vF-eFu"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCd-V8-nT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="487.19999999999999" y="1013.3433283358322"/>
         </scene>
         <!--Manual1 View Controller-->
         <scene sceneID="3hc-DS-s7z">
             <objects>
-                <viewController id="eR7-Wi-uyJ" customClass="Manual1_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="First" id="eR7-Wi-uyJ" customClass="Manual1_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T9h-UK-jHl"/>
                         <viewControllerLayoutGuide type="bottom" id="DqV-Ni-Y0D"/>
@@ -470,9 +480,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T40-3g-KsA">
                                 <rect key="frame" x="135" y="301" width="104" height="208"/>
                                 <state key="normal" title="Button" image="manualCharacter"/>
-                                <connections>
-                                    <segue destination="aad-8p-d2S" kind="show" id="dG5-RG-Uia"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProgress1" translatesAutoresizingMaskIntoConstraints="NO" id="FAT-m9-N0J">
                                 <rect key="frame" x="139" y="613" width="96" height="15"/>
@@ -500,12 +507,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RBb-wv-G5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="868"/>
+            <point key="canvasLocation" x="1215.2" y="1073.6131934032985"/>
         </scene>
         <!--Manual2 View Controller-->
         <scene sceneID="ykv-E5-Wl9">
             <objects>
-                <viewController id="aad-8p-d2S" customClass="Manual2_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="aad-8p-d2S" customClass="Manual2_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z1p-Oo-DN5"/>
                         <viewControllerLayoutGuide type="bottom" id="aa9-g9-zCH"/>
@@ -534,9 +541,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhY-OF-1VC">
                                 <rect key="frame" x="135" y="301" width="104" height="208"/>
                                 <state key="normal" title="Button" image="manualCharacter"/>
-                                <connections>
-                                    <segue destination="5za-FT-IkM" kind="show" id="Yga-4F-5z9"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97256577014923096" green="0.97252929210662842" blue="0.97255396842956543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -560,12 +564,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax6-Tq-0IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="866"/>
+            <point key="canvasLocation" x="1900" y="980.95952023988013"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Dai-t5-Ij6">
+            <objects>
+                <viewController id="7cq-qy-ZVY" customClass="CollectionViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82s-2z-PMm"/>
+                        <viewControllerLayoutGuide type="bottom" id="xJX-XL-Fgj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TRf-6d-nff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NL1-o0-jXT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="1" id="7Ee-BY-i4O">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="oTf-n1-qDT">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="collectionView" destination="NL1-o0-jXT" id="8jE-Oo-eTg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7D-jH-NgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095.2" y="1796.8515742128936"/>
         </scene>
         <!--Manual3 View Controller-->
         <scene sceneID="pGX-bm-g4H">
             <objects>
-                <viewController id="5za-FT-IkM" customClass="Manual3_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third" id="5za-FT-IkM" customClass="Manual3_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wYs-1S-dxg"/>
                         <viewControllerLayoutGuide type="bottom" id="Cnp-y4-7rO"/>
@@ -594,9 +644,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEr-7T-lIM">
                                 <rect key="frame" x="135" y="301" width="104" height="208"/>
                                 <state key="normal" title="Button" image="manualCharacter"/>
-                                <connections>
-                                    <segue destination="DbW-Wz-Ck3" kind="show" id="mY3-47-dgS"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96864461898803711" green="0.96860837936401367" blue="0.96863293647766113" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -620,12 +667,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCE-Rx-knq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="866"/>
+            <point key="canvasLocation" x="2672.8000000000002" y="912.5937031484259"/>
         </scene>
         <!--Manual4 View Controller-->
         <scene sceneID="zP2-7V-ySk">
             <objects>
-                <viewController id="DbW-Wz-Ck3" customClass="Manual4_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Fourth" id="DbW-Wz-Ck3" customClass="Manual4_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y7G-Wg-5Ac"/>
                         <viewControllerLayoutGuide type="bottom" id="qp3-f2-W3f"/>
@@ -654,8 +701,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-tq-P9F">
                                 <rect key="frame" x="135" y="301" width="104" height="208"/>
                                 <state key="normal" title="Button" image="manualCharacter"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNx-f0-NNN">
+                                <rect key="frame" x="152" y="554" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="20"/>
+                                <state key="normal" title="시작하기">
+                                    <color key="titleColor" red="0.42973575000000003" green="0.58267718550000003" blue="0.67064648869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <segue destination="9lp-ZR-i6R" kind="show" id="otB-2A-YVW"/>
+                                    <action selector="gotoHomeViewController:" destination="DbW-Wz-Ck3" eventType="touchUpInside" id="joJ-ZT-Kqb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -680,112 +735,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNp-Zo-Gp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178" y="866"/>
+            <point key="canvasLocation" x="3408.8000000000002" y="903.59820089955031"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="IhS-GX-APZ">
+        <!--Navigation Controller-->
+        <scene sceneID="akx-Tk-4LA">
             <objects>
-                <collectionViewController id="p0i-ZO-RuE" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="h3K-G5-6FP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LEd-9y-lz1">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xoS-J0-0uu">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="p0i-ZO-RuE" id="dcC-AA-DiO"/>
-                            <outlet property="delegate" destination="p0i-ZO-RuE" id="e77-Ot-pYX"/>
-                        </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="332-Ls-Edj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IVB-g7-DRA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="biM-So-Jji">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.56470588235294117" green="0.72941176470588232" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YPD-F4-mUC" kind="relationship" relationship="rootViewController" id="ZQs-sH-7hU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2t-pN-JzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2177" y="1549"/>
+            <point key="canvasLocation" x="4464.8000000000002" y="889.20539730134942"/>
         </scene>
-        <!--Manual5 View Controller-->
-        <scene sceneID="w6h-31-1mv">
+        <!--Navigation Controller-->
+        <scene sceneID="ftx-fH-29r">
             <objects>
-                <viewController id="9lp-ZR-i6R" customClass="Manual5_ViewController" customModule="NoSmokingPeople" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jDY-L7-9Oq"/>
-                        <viewControllerLayoutGuide type="bottom" id="8in-OG-CQ4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OLa-Ru-A4X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="금민 캐릭터" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9s-cL-nIG">
-                                <rect key="frame" x="101.5" y="139.5" width="159" height="35.5"/>
-                                <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM HANNA 11yrs old OTF" pointSize="35"/>
-                                <color key="textColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hq-0w-gCp">
-                                <rect key="frame" x="81" y="209" width="201" height="34"/>
-                                <string key="text">금연 일수가 쌓일 수록
-금민 캐릭터가 업그레이드 됩니다!</string>
-                                <fontDescription key="fontDescription" name="KoPubDotumPL" family="KoPubDotum_Pro" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manualCharacter" translatesAutoresizingMaskIntoConstraints="NO" id="uEQ-rL-h8N">
-                                <rect key="frame" x="135" y="301" width="104" height="208"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgProgress5" translatesAutoresizingMaskIntoConstraints="NO" id="RNk-OQ-l1M">
-                                <rect key="frame" x="139" y="613" width="96" height="15"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0B-CH-F1m">
-                                <rect key="frame" x="152.5" y="569" width="70" height="22"/>
-                                <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="20"/>
-                                <state key="normal" title="시작하기">
-                                    <color key="titleColor" red="0.42973574995994568" green="0.58267718553543091" blue="0.67064648866653442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <segue destination="YPD-F4-mUC" kind="show" id="TKP-tq-MSN"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.96864461898803711" green="0.96860837936401367" blue="0.96863293647766113" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="8in-OG-CQ4" firstAttribute="top" secondItem="4hq-0w-gCp" secondAttribute="bottom" constant="424" id="35y-0M-QVJ"/>
-                            <constraint firstItem="4hq-0w-gCp" firstAttribute="leading" secondItem="OLa-Ru-A4X" secondAttribute="leading" constant="81" id="5BZ-Yl-6wL"/>
-                            <constraint firstItem="RNk-OQ-l1M" firstAttribute="leading" secondItem="OLa-Ru-A4X" secondAttribute="leading" constant="139" id="7lw-XI-rDB"/>
-                            <constraint firstItem="RNk-OQ-l1M" firstAttribute="top" secondItem="f0B-CH-F1m" secondAttribute="bottom" constant="22" id="AVR-Gr-WUP"/>
-                            <constraint firstItem="8in-OG-CQ4" firstAttribute="top" secondItem="uEQ-rL-h8N" secondAttribute="bottom" constant="158" id="Ea5-Cl-55c"/>
-                            <constraint firstItem="RNk-OQ-l1M" firstAttribute="top" secondItem="uEQ-rL-h8N" secondAttribute="bottom" constant="104" id="GkZ-aS-RCS"/>
-                            <constraint firstItem="uEQ-rL-h8N" firstAttribute="leading" secondItem="OLa-Ru-A4X" secondAttribute="leading" constant="135" id="NL7-Sj-gy4"/>
-                            <constraint firstAttribute="trailing" secondItem="f0B-CH-F1m" secondAttribute="trailing" constant="152.5" id="OMf-hA-14a"/>
-                            <constraint firstItem="8in-OG-CQ4" firstAttribute="top" secondItem="U9s-cL-nIG" secondAttribute="bottom" constant="492" id="a8O-vz-Kh6"/>
-                            <constraint firstAttribute="trailing" secondItem="RNk-OQ-l1M" secondAttribute="trailing" constant="140" id="bux-MY-ocN"/>
-                            <constraint firstItem="4hq-0w-gCp" firstAttribute="top" secondItem="U9s-cL-nIG" secondAttribute="bottom" constant="34" id="eJT-Gt-7g6"/>
-                            <constraint firstAttribute="trailing" secondItem="4hq-0w-gCp" secondAttribute="trailing" constant="93" id="fBw-gN-2r2"/>
-                            <constraint firstAttribute="trailing" secondItem="uEQ-rL-h8N" secondAttribute="trailing" constant="136" id="n5o-ol-2HS"/>
-                            <constraint firstItem="f0B-CH-F1m" firstAttribute="top" secondItem="uEQ-rL-h8N" secondAttribute="bottom" constant="60" id="nXZ-gD-UU1"/>
-                            <constraint firstItem="8in-OG-CQ4" firstAttribute="top" secondItem="RNk-OQ-l1M" secondAttribute="bottom" constant="39" id="oub-Wc-PhQ"/>
-                            <constraint firstItem="U9s-cL-nIG" firstAttribute="leading" secondItem="OLa-Ru-A4X" secondAttribute="leading" constant="101.5" id="rf9-e9-Wvw"/>
-                            <constraint firstAttribute="trailing" secondItem="U9s-cL-nIG" secondAttribute="trailing" constant="114.5" id="t7F-gh-w3w"/>
-                            <constraint firstItem="f0B-CH-F1m" firstAttribute="leading" secondItem="OLa-Ru-A4X" secondAttribute="leading" constant="152.5" id="wLa-v6-hmT"/>
-                            <constraint firstItem="uEQ-rL-h8N" firstAttribute="top" secondItem="4hq-0w-gCp" secondAttribute="bottom" constant="58" id="xRR-Yo-Cme"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkx-BQ-FuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PMy-1s-XfM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ZUm-3P-Jzj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.56470588239999997" green="0.72941176470000002" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GqR-K3-Z1y" kind="relationship" relationship="rootViewController" id="qKH-or-Ldj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-vm-Cql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2823" y="866"/>
+            <point key="canvasLocation" x="-452" y="1013.3433283358322"/>
         </scene>
     </scenes>
     <resources>
@@ -796,7 +784,6 @@
         <image name="imgProgress2" width="96" height="15"/>
         <image name="imgProgress3" width="96" height="15"/>
         <image name="imgProgress4" width="96" height="15"/>
-        <image name="imgProgress5" width="96" height="15"/>
         <image name="manualCharacter" width="104" height="208"/>
     </resources>
 </document>
