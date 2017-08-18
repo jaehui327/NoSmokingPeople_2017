@@ -21,6 +21,9 @@
 		CB1342861F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1342851F1FB94200E1A1AA /* NoSmokingPeopleUITests.swift */; };
 		CB194E931F2074CA00D80114 /* WrittenOathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */; };
 		CB194E951F21D77300D80114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB194E941F21D77300D80114 /* LoginViewController.swift */; };
+		CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */; };
+		CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */; };
+		CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */; };
 		CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
@@ -75,6 +78,9 @@
 		CB1342871F1FB94200E1A1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrittenOathViewController.swift; sourceTree = "<group>"; };
 		CB194E941F21D77300D80114 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
 		CBDEA7EA1F39A47700D8F38F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CBDFF8F81F2C6D81005AE38E /* KoPub Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPub Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
@@ -137,8 +143,8 @@
 				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
 				CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */,
 				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
-				CBF826C81F31D182002D4C09 /* HomeViewController.swift */,
 				CBDEA7ED1F39A98800D8F38F /* Manual */,
+				CB64FBB01F3AB62300530E16 /* Tab_bar */,
 				CB13426C1F1FB94200E1A1AA /* Assets.xcassets */,
 				CBDEA7EE1F39A9EE00D8F38F /* storyboard */,
 				CB1342711F1FB94200E1A1AA /* Info.plist */,
@@ -162,6 +168,17 @@
 				CB1342871F1FB94200E1A1AA /* Info.plist */,
 			);
 			path = NoSmokingPeopleUITests;
+			sourceTree = "<group>";
+		};
+		CB64FBB01F3AB62300530E16 /* Tab_bar */ = {
+			isa = PBXGroup;
+			children = (
+				CBF826C81F31D182002D4C09 /* HomeViewController.swift */,
+				CB64FBAA1F3AB2A100530E16 /* HealthViewController.swift */,
+				CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */,
+				CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */,
+			);
+			name = Tab_bar;
 			sourceTree = "<group>";
 		};
 		CBDEA7EC1F39A97900D8F38F /* font */ = {
@@ -352,7 +369,10 @@
 				CB0940E81F3456DF0078BAA6 /* Manual4_ViewController.swift in Sources */,
 				CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */,
 				CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */,
+				CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */,
+				CB64FBAF1F3AB2BC00530E16 /* TipViewController.swift in Sources */,
 				CBF826C91F31D182002D4C09 /* HomeViewController.swift in Sources */,
+				CB64FBAB1F3AB2A100530E16 /* HealthViewController.swift in Sources */,
 				CB0940E71F3456DF0078BAA6 /* Manual3_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
