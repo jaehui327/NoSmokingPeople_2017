@@ -14,6 +14,10 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let logo = UIImage(named: "invalidName")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
 
         self.SettingTableView.delegate = self
         self.SettingTableView.dataSource = self
@@ -23,6 +27,10 @@ class SettingViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func btnBackPressed(_ sender: Any) {
+        self.presentingViewController?.dismiss(animated: true, completion: nil)
+
     }
     
 
