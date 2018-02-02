@@ -1,24 +1,18 @@
 //
-//  HomeViewController.swift
+//  drawerViewController.swift
 //  NoSmokingPeople
 //
-//  Created by 김재희 on 2017. 8. 2..
-//  Copyright © 2017년 김재희. All rights reserved.
+//  Created by 김재희 on 2018. 2. 2..
+//  Copyright © 2018년 김재희. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class drawerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let logo = UIImage(named: "invalidName")
-        let imageView = UIImageView(image: logo)
-        self.navigationItem.titleView = imageView
-        
-        
-       
         // Do any additional setup after loading the view.
     }
 

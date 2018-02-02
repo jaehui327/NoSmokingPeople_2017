@@ -16,9 +16,20 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var DateTextField: UITextField!
     
+    
+    @IBOutlet weak var signUpBtn: UIBarButtonItem!
+    
+    
     @IBAction func textFieldEditingDidChange(sender: UITextField) {
         
         print("textField: \(DateTextField.text!)")
+        
+        if (NameTextField.hasText){
+            signUpBtn.isEnabled = true
+        } else {
+            signUpBtn.isEnabled = false
+        }
+        
         
         if ((DateTextField.text) != nil) {
             DateTextField.backgroundColor = UIColor(hex: 0x98B9C9)
@@ -47,13 +58,30 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        NotificationCenter.default.addObserver(self, selector:#selector(textChanged(sender:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
+        signUpBtn.isEnabled = false
+
+        
+        
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
 
         NameTextField.delegate = self
         DateTextField.delegate = self
+        
+            }
+    
+    func textChanged(sender:NSNotification){
+        if (NameTextField.hasText && DateTextField.hasText){
+            signUpBtn.isEnabled = true
+        } else{
+            signUpBtn.isEnabled = false
+        }
     }
+    
+    
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         NameTextField.resignFirstResponder()

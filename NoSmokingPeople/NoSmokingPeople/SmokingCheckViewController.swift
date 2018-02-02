@@ -16,6 +16,10 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SYTextField: UITextField!
     @IBOutlet weak var SNTextField: UITextField!
     @IBOutlet weak var SPTextField: UITextField!
+    
+    @IBOutlet weak var signUpBtn: UIBarButtonItem!
+    
+    
    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -29,7 +33,8 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
        
-
+        NotificationCenter.default.addObserver(self, selector:#selector(textChanged(sender:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
+        signUpBtn.isEnabled = false
         
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
@@ -39,6 +44,16 @@ class SmokingCheckViewController: UIViewController, UITextFieldDelegate {
         SNTextField.delegate = self
         SPTextField.delegate = self
     }
+    
+    func textChanged(sender:NSNotification){
+        
+        if (SYTextField.hasText && SNTextField.hasText && SPTextField.hasText){
+            signUpBtn.isEnabled = true
+        } else {
+            signUpBtn.isEnabled = false
+        }
+        
+        }
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

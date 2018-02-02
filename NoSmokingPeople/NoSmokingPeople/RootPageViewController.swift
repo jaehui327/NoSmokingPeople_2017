@@ -33,6 +33,8 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
        
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
         
         //금연의 민족 로고 
         let logo = UIImage(named: "invalidName")
@@ -107,7 +109,8 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
             //이전 뷰컨트롤러의 인덱스가 0보다 작아질경우(첫번째 뷰가 선택된 상황에서 왼쪽으로 스와이프(더 이전으로 가려고 할경우, 즉 인덱스값이 0보다 작을떄)
             //마지막 뷰 컨트롤러가 나타나게 해줍니다
             
-            return viewControllerList.last
+            //return viewControllerList.last
+            return nil
         }
         guard viewControllerList.count > previousIndex else{
             //previousIndex >= viewControllerList.count
@@ -134,11 +137,14 @@ class RootPageViewController : UIPageViewController,UIPageViewControllerDataSour
         //print("After")
         //print("vcIndex")
         //print(vcIndex)
+        
+        
         guard viewControllerList.count != nextIndex else{
             
             //nextIndex == viewControllerList.count
             //마지막 뷰 컨트롤러에서 오른쪽으로 스와이프(다음 뷰 컨트롤러)로 이동하려고 할경우, 첫번쨰 뷰 컨트롤러로 이동시켜줍니다
-            return viewControllerList.first
+            //return viewControllerList.first
+            return nil
         }
         
         guard viewControllerList.count > nextIndex else{
