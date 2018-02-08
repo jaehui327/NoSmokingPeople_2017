@@ -72,6 +72,9 @@
                                 <state key="normal" title="로그인 후 서약서로 이동">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="gotoHomeView:" destination="2uj-5D-zO0" eventType="touchUpInside" id="cmO-3r-sgJ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLogo1" translatesAutoresizingMaskIntoConstraints="NO" id="rnm-nw-q8A">
                                 <rect key="frame" x="62.5" y="120" width="250" height="250"/>
@@ -131,7 +134,7 @@
                                 <color key="textColor" red="0.34882864356040955" green="0.34585842490196228" blue="0.30205005407333374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5V-Wl-ZiB" userLabel="Textfield">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5V-Wl-ZiB" userLabel="Textfield" customClass="MyCustomTextField" customModule="NoSmokingPeople" customModuleProvider="target">
                                 <rect key="frame" x="137" y="229" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="n6U-Mj-Bgl"/>
@@ -161,7 +164,7 @@
                                 <color key="textColor" red="0.34882864356040955" green="0.34585842490196228" blue="0.30205005407333374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNA-Yd-sEC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNA-Yd-sEC" customClass="MyCustomTextField" customModule="NoSmokingPeople" customModuleProvider="target">
                                 <rect key="frame" x="137" y="344" width="120" height="40"/>
                                 <color key="textColor" red="0.38431372549019605" green="0.58823529411764708" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="30"/>
@@ -187,7 +190,7 @@
                                 <color key="textColor" red="0.34882864356040955" green="0.34585842490196228" blue="0.30205005407333374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-9v-Iq9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-9v-Iq9" customClass="MyCustomTextField" customModule="NoSmokingPeople" customModuleProvider="target">
                                 <rect key="frame" x="137" y="459" width="120" height="40"/>
                                 <color key="textColor" red="0.38431372549019605" green="0.58823529411764708" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="30"/>
@@ -294,7 +297,7 @@
                                 <color key="textColor" red="0.34882864356040955" green="0.34585842490196228" blue="0.30205005407333374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-77-Tj0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-77-Tj0" customClass="MyCustomTextField" customModule="NoSmokingPeople" customModuleProvider="target">
                                 <rect key="frame" x="121" y="200" width="120" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Icj-xG-m2F"/>
@@ -314,7 +317,7 @@
                                 <color key="textColor" red="0.34882864356040955" green="0.34585842490196228" blue="0.30205005407333374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="날짜를 선택해주세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CwU-aw-iqa">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="날짜를 선택해주세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CwU-aw-iqa" customClass="MyCustomTextField" customModule="NoSmokingPeople" customModuleProvider="target">
                                 <rect key="frame" x="69.5" y="264" width="140" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -643,7 +646,7 @@
                                     <color key="titleColor" red="0.38431372549019605" green="0.58823529411764708" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="B5a-HW-Oiq" kind="showDetail" id="WZo-cI-aB2"/>
+                                    <action selector="gotoHomeViewController:" destination="DbW-Wz-Ck3" eventType="touchUpInside" id="emV-b9-bmY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -768,7 +771,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="ACf-zY-VID"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="147" id="UdI-Kc-6bp"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="KoPubDotumPB" family="KoPubDotum_Pro" pointSize="14"/>
                                                     <color key="textColor" red="0.94901960784313721" green="0.42352941176470588" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -818,7 +821,7 @@
                         <barButtonItem key="leftBarButtonItem" image="btnMenu" id="2df-yP-0fC">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="btnMenuPressed:" destination="kt8-O6-MjI" id="1RM-sW-nrG"/>
+                                <action selector="btnPressed:" destination="kt8-O6-MjI" id="iPK-ec-obz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1044,7 +1047,9 @@
         <scene sceneID="Cvl-0S-tpT">
             <objects>
                 <navigationController id="Vzg-5h-dJY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="btnHome" selectedImage="btnHomeClicked" id="C1i-b7-VW9"/>
+                    <tabBarItem key="tabBarItem" title="" image="btnHome" selectedImage="btnHomeClicked" id="C1i-b7-VW9">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="K4W-a4-Lrh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1083,7 +1088,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ng-Bw-aeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4548" y="787"/>
+            <point key="canvasLocation" x="4604" y="787"/>
         </scene>
         <!--Tip View Controller-->
         <scene sceneID="Xjf-ua-eEr">
@@ -1118,7 +1123,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-of-jOA">
-                                                    <rect key="frame" x="20" y="177" width="153" height="17"/>
+                                                    <rect key="frame" x="20" y="179" width="153" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="BaB-VS-U3H"/>
                                                         <constraint firstAttribute="height" constant="17" id="R2R-nh-fTe"/>
@@ -1131,7 +1136,7 @@
                                         </view>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Hh4-of-jOA" secondAttribute="bottom" constant="14" id="3RX-Ls-pov"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hh4-of-jOA" secondAttribute="bottom" multiplier="208:196" id="3RX-Ls-pov"/>
                                             <constraint firstItem="EEX-jb-6Ci" firstAttribute="height" secondItem="R47-kc-s0H" secondAttribute="height" multiplier="164:208" id="HKm-ew-ADy"/>
                                             <constraint firstItem="EEX-jb-6Ci" firstAttribute="top" secondItem="R47-kc-s0H" secondAttribute="top" id="HP8-1v-dWh"/>
                                             <constraint firstItem="EEX-jb-6Ci" firstAttribute="width" secondItem="R47-kc-s0H" secondAttribute="width" id="JBO-gU-QYf"/>
@@ -1169,13 +1174,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87s-fl-l11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4548" y="1565"/>
+            <point key="canvasLocation" x="4604" y="1565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VNW-ao-Rhx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSj-bM-thi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="btnHealth" selectedImage="btnHealthClicked" id="iAW-7o-JhO"/>
+                    <tabBarItem key="tabBarItem" title="" image="btnHealth" selectedImage="btnHealthClicked" id="iAW-7o-JhO">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
@@ -1330,7 +1337,9 @@
         <scene sceneID="0JW-3k-fde">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRW-Ie-XwH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="btnDiary" id="yp9-VD-F2E"/>
+                    <tabBarItem key="tabBarItem" title="" image="btnDiary" id="yp9-VD-F2E">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7KZ-ER-hRt">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1350,7 +1359,9 @@
         <scene sceneID="ZSj-Bk-nd9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pue-Xe-iLX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="btnTip" id="SZb-CQ-a3n"/>
+                    <tabBarItem key="tabBarItem" title="" image="btnTip" id="SZb-CQ-a3n">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xBQ-CQ-qzk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1462,7 +1473,6 @@
         <image name="manualCharacter" width="104" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WZo-cI-aB2"/>
         <segue reference="Agj-kb-4fQ"/>
     </inferredMetricsTieBreakers>
 </document>
