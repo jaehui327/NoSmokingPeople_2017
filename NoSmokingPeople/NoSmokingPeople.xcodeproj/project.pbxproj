@@ -36,7 +36,6 @@
 		CB9079F51F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F61F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
 		CB9079F71F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */; };
-		CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */; };
 		CBCA95701F572A6F00673630 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */; };
 		CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */; };
 		CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */; };
@@ -108,7 +107,6 @@
 		CB64FBAC1F3AB2AE00530E16 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		CB64FBAE1F3AB2BC00530E16 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		CB9079F41F2C69D1000BF2A6 /* BMHANNA_11yrs_otf.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMHANNA_11yrs_otf.otf; sourceTree = "<group>"; };
-		CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTextField.swift; sourceTree = "<group>"; };
 		CBCA956F1F572A6F00673630 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBCA95711F5738D200673630 /* TipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCollectionViewCell.swift; sourceTree = "<group>"; };
 		CBCA95731F57440600673630 /* HealthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				CB1342651F1FB94200E1A1AA /* AppDelegate.swift */,
 				CB194E941F21D77300D80114 /* LoginViewController.swift */,
 				CB1342671F1FB94200E1A1AA /* SmokingCheckViewController.swift */,
-				CBA152FF202C0A8C000990EF /* MyCustomTextField.swift */,
 				CB194E921F2074CA00D80114 /* WrittenOathViewController.swift */,
 				CBDEA7EA1F39A47700D8F38F /* Extension.swift */,
 				CBDEA7ED1F39A98800D8F38F /* Manual */,
@@ -649,7 +646,6 @@
 				CB0940E61F3456DF0078BAA6 /* Manual2_ViewController.swift in Sources */,
 				CB1342661F1FB94200E1A1AA /* AppDelegate.swift in Sources */,
 				CBCA95721F5738D200673630 /* TipCollectionViewCell.swift in Sources */,
-				CBA15300202C0A8C000990EF /* MyCustomTextField.swift in Sources */,
 				CBCA95741F57440600673630 /* HealthCollectionViewCell.swift in Sources */,
 				CB64FBAD1F3AB2AE00530E16 /* DiaryViewController.swift in Sources */,
 				CB2C2D491F57EFDC006965F0 /* SettingViewController.swift in Sources */,

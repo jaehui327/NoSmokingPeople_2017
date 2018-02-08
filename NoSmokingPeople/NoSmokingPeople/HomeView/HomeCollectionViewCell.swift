@@ -13,5 +13,4 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var maintitle: UILabel!
     @IBOutlet weak var subtitle: UILabel!
     
-    
 }

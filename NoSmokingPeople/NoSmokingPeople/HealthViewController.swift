@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KYDrawerController
 
 class HealthViewController: UIViewController {
 
@@ -26,16 +25,28 @@ class HealthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func btnMenuPressed(_ sender: Any) {
-        if let drawer = tabBarController?.parent as? KYDrawerController {
-            drawer.setDrawerState(.opened, animated: true)
-        }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+    @IBAction func btnMenuPressed(_ sender: Any) {
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        appDel.drawerController.setDrawerState(.opened, animated: true)
+    }
+    
+    /*
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
 
-extension HealthViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HealthViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
@@ -122,20 +133,11 @@ extension HealthViewController : UICollectionViewDelegate, UICollectionViewDataS
             break
         }
         
-        cell.layer.cornerRadius = 3
-        cell.layer.backgroundColor = UIColor.white.cgColor
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.masksToBounds = false
-        cell.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-        cell.layer.shadowOpacity = 0.5
-        cell.layer.shadowRadius = 1
+        cell.layer.cornerRadius = 5
         
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width - 32 , height: 90)
-    }
 }
 
 
