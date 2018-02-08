@@ -21,13 +21,21 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func textFieldEditingDidChange(sender: UITextField) {
-        print("dateField: \(DateTextField.text!)")
         
-        if (NameTextField.hasText){ signUpBtn.isEnabled = true }
-        else { signUpBtn.isEnabled = false }
+        print("textField: \(DateTextField.text!)")
         
-        if ((DateTextField.text) != nil) { DateTextField.backgroundColor = UIColor(hex: 0x98B9C9) }
-        else { DateTextField.backgroundColor = UIColor.white }
+        if (NameTextField.hasText){
+            signUpBtn.isEnabled = true
+        } else {
+            signUpBtn.isEnabled = false
+        }
+        
+        
+        if ((DateTextField.text) != nil) {
+            DateTextField.backgroundColor = UIColor(hex: 0x98B9C9)
+        } else {
+            DateTextField.backgroundColor = UIColor.white
+        }
     }
     
     
@@ -35,10 +43,6 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         let datePickerView:UIDatePicker = UIDatePicker()
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
-        let today = NSDate()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy년 MM월 dd일"
-        DateTextField.text = dateFormatter.string(from: today as Date)
         datePickerView.addTarget(self, action: #selector(WrittenOathViewController.datePickerValueChanged), for: UIControlEvents.valueChanged)
     }
     
@@ -57,7 +61,9 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         
         NotificationCenter.default.addObserver(self, selector:#selector(textChanged(sender:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
         signUpBtn.isEnabled = false
-  
+
+        
+        
         let logo = UIImage(named: "invalidName")
         let imageView = UIImageView(image: logo)
         self.navigationItem.titleView = imageView
@@ -65,7 +71,7 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         NameTextField.delegate = self
         DateTextField.delegate = self
         
-        }
+            }
     
     func textChanged(sender:NSNotification){
         if (NameTextField.hasText && DateTextField.hasText){
@@ -74,6 +80,7 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
             signUpBtn.isEnabled = false
         }
     }
+    
     
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -86,5 +93,20 @@ class WrittenOathViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 
 }
