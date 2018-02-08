@@ -7,23 +7,27 @@
 //
 
 import UIKit
+import KYDrawerController
 
 class Manual4_ViewController: UIViewController {
 
+    let drawerController = KYDrawerController(drawerDirection: .left, drawerWidth: 240)
     
-    
-    /*
     @IBAction func gotoHomeViewController(_ sender: Any) {
         
-        let nvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        self.navigationController?.pushViewController(nvc, animated: true)
+//        let nvc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTab")
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainTab")
+        let menuVC = storyboard.instantiateViewController(withIdentifier: "Drawer")
+        
+        drawerController.mainViewController = mainVC
+        drawerController.drawerViewController = menuVC
+        
+        self.present(drawerController, animated: true, completion: nil)
     }
-*/
-    
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,20 +40,5 @@ class Manual4_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KYDrawerController
 
 class TipViewController: UIViewController {
 
@@ -22,30 +23,16 @@ class TipViewController: UIViewController {
         self.TipCollectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func btnMenuPressed(_ sender: Any) {
-        let appDel = UIApplication.shared.delegate as! AppDelegate
-        appDel.drawerController.setDrawerState(.opened, animated: true)
+        if let drawer = tabBarController?.parent as? KYDrawerController {
+            drawer.setDrawerState(.opened, animated: true)
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension TipViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+extension TipViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -69,18 +56,32 @@ extension TipViewController : UICollectionViewDataSource, UICollectionViewDelega
             break
         }
         
-        cell.layer.cornerRadius = 5
-        
-        cell.layer.shadowColor = UIColor.gray.cgColor
-        cell.layer.shadowOpacity = 0.7
-        cell.layer.shadowRadius = 3
+        cell.layer.cornerRadius = 4
+        cell.layer.backgroundColor = UIColor.white.cgColor
+        cell.layer.shadowColor = UIColor.darkGray.cgColor
         cell.layer.masksToBounds = false
-
-        return cell
+        cell.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        cell.layer.shadowOpacity = 0.35
+        cell.layer.shadowRadius = 4
         
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = UIScreen.main.bounds.width - 55
+        let height = width / 320 * 208
+        return CGSize(width: width, height: height)
+        
+        //320 208
     }
     
-    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        var cell = collectionView.cellForItem(at: indexPath)
+//
+//        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, animations: ({
+//
+//        }), completion: nil)
+//
+//    }
     
 }
 
